@@ -1,0 +1,19 @@
+body{
+    background-color: #eeeeee;font-family: 黑体;font-size: 18px;color:#666666 ;
+}
+
+.p-title{
+    text-align: center;margin: 48px 0px;font-size: 18px;color:#999999;
+}
+
+.p-panel{
+    width:765px ;height: 418px;margin-top: 10px;background-color: #fcfcfc;
+}
+
+.form-group{
+    padding-left: 165px;
+}
+
+.form-group label{
+    font-family: 黑体;font-size: 18px;color: #666666;line-height: 30px;padding: 0px;margin: 0px;width: 60px;
+}

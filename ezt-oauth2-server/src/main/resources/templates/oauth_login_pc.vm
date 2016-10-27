@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户授权登录</title>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/oauth_web.css">
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div style="width:763px;margin: 0px auto;">
+        <div style="margin-top: 135px;">
+            <img src="/img/logo2x.png">
+            <p style="float: right;padding-top: 35px;color:#999999;">没有账号请<label style="line-height: 25px; border-bottom: 2px solid #00a8e8; color: #00a8e8;font-size: 24px;"><a href="http://www.eztcn.com/Home/User/userlogin.html" >注册</a></label></p>
+        </div>
+        <div class="panel panel-default p-panel">
+            <div class="panel-body"  style="padding: 0px;height: 418px;">
+
+                <h2 class="p-title">您将通过医指通账号来访问$client_name！</h2>
+
+                <form role="form" id="fm_login" class="form-horizontal" method="post" action="authorize">
+
+                    <input type="text" name="action" value="login" hidden="true"/>
+                    <input type="text" name="page_type" value="pc" hidden="true"/>
+                    <input type="text" name="client_id" value="$client_id" hidden="true" />
+                    <input type="text" name="response_type" value="$response_type" hidden="true" />
+                    <input type="text" name="redirect_uri" value="$redirect_uri" hidden="true" />
+
+                    <div class="form-group" style="width: 350px;margin: 0px auto;padding: 0px;">
+                        <label class="col-sm-2">账号：</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="user_account" class="form-control" value="" placeholder="请输入电话号码/会员号"/>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="width: 350px;margin: 14px auto;padding: 0px;">
+                        <label class="col-sm-2" style="color: #666666;">密码：</label>
+                        <div class="col-sm-9">
+                            <input type="password" name="user_password"  class="form-control" value="" placeholder="请输入登陆密码"/>
+                        </div>
+                    </div>
+
+                    <div style="width:350px;font-size: 18px;margin: 46px auto;text-align: center;">
+                        <button type="submit" class="button btn-info" style="padding:2px;width:105px;background-color: #00a8e8;" >登 录</button>
+                        <a href="http://np.eztcn.com/website/View/User/recover.jsp" style="color: #999999;">忘记密码？</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+<script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</html>

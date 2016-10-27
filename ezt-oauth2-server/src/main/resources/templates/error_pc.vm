@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>错误页面</title>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/oauth_web.css">
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div style="width:763px;margin: 0px auto;">
+
+        <div style="margin-top: 135px;">
+            <img src="/img/logo2x.png">
+        </div>
+
+        <div class="panel panel-default p-panel">
+
+            <div class="panel-body"  style="padding: 0px;height: 418px;">
+                <div style="text-align: left ; margin: 44px 0px 0px 125px;">
+                    <img style="display: block;float: left;" src="/img/error.png">
+                    <p style="display: block;color: #999999;margin:0px;padding: 34px 30px;float: left;">出错啦：$error_description</p>
+                    <div style="clear: left;"></div>
+                </div>
+
+                <div style="width:105px;clear:left;font-size: 18px;margin: 117px 0px 0 305px;">
+                    <button type="button" onclick="history.go(-1)" class="button btn-info" style="padding:2px;width:105px;background-color: #00a8e8;" >返 回</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+</script>
+</html>

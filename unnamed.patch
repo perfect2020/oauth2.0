@@ -1,0 +1,60 @@
+Index: ezt-oauth2-server/src/main/resources/templates/oauth_login_pc.vm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ezt-oauth2-server/src/main/resources/templates/oauth_login_pc.vm	(revision d8f61016e6bf991ee17b8c2b68050fda0133c392)
++++ ezt-oauth2-server/src/main/resources/templates/oauth_login_pc.vm	(revision )
+@@ -12,7 +12,7 @@
+     <div style="width:763px;margin: 0px auto;">
+         <div style="margin-top: 135px;">
+             <img src="/img/logo2x.png">
+-            <p style="float: right;padding-top: 35px;color:#999999;">没有账号请<label style="line-height: 25px; border-bottom: 2px solid #00a8e8; color: #00a8e8;font-size: 24px;">注册</label></p>
++            <p style="float: right;padding-top: 35px;color:#999999;">没有账号请<label style="line-height: 25px; border-bottom: 2px solid #00a8e8; color: #00a8e8;font-size: 24px;"><a href="http://www.eztcn.com/Home/User/userlogin.html" >注册</a></label></p>
+         </div>
+         <div class="panel panel-default p-panel">
+             <div class="panel-body"  style="padding: 0px;height: 418px;">
+@@ -43,7 +43,7 @@
+ 
+                     <div style="width:350px;font-size: 18px;margin: 46px auto;text-align: center;">
+                         <button type="submit" class="button btn-info" style="padding:2px;width:105px;background-color: #00a8e8;" >登 录</button>
+-                        <a href="#" style="color: #999999;">忘记密码？</a>
++                        <a href="http://np.eztcn.com/website/View/User/recover.jsp" style="color: #999999;">忘记密码？</a>
+                     </div>
+ 
+                 </form>
+\ No newline at end of file
+Index: ezt-oauth2-server/src/main/resources/templates/oauth_login_h5.vm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ezt-oauth2-server/src/main/resources/templates/oauth_login_h5.vm	(revision d8f61016e6bf991ee17b8c2b68050fda0133c392)
++++ ezt-oauth2-server/src/main/resources/templates/oauth_login_h5.vm	(revision )
+@@ -27,7 +27,7 @@
+         <img src="/img/logo2x.png">
+     </div> <!-- #main -->
+     <div class="main-wrapper">
+-        <p>您将通过医指通账号访问寻医问药！</p>
++        <p>您将通过医指通账号访问$client_name！</p>
+ 
+         <form method="post" action="authorize">
+ 
+@@ -48,7 +48,7 @@
+             </div>
+ 
+             <div style="margin: 0px 30px;text-align:right;">
+-                <a href="#" style="font-size: 22px;color: #00a8e8;">忘记密码？</a>
++                <a href="http://np.eztcn.com/website/View/User/recover.jsp" style="font-size: 22px;color: #00a8e8;">忘记密码？</a>
+             </div>
+ 
+             <div style="margin: 96px 30px 38px 30px;">
+@@ -56,7 +56,7 @@
+             </div>
+ 
+             <div style="margin: 38px 30px;">
+-                <button type="button" class="button btn-info button-h5" >注册</button>
++                <button type="button" class="button btn-info button-h5" onclick="window.open('http://www.eztcn.com/Home/User/userlogin.html')">注册</button>
+             </div>
+ 
+         </form>

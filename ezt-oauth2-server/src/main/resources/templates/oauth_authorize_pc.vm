@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>确认授权</title>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/oauth_web.css">
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="//cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div style="width:763px;margin: 0px auto;">
+
+        <div class="panel panel-default p-panel" style="margin-top: 212px;">
+            <div class="panel-body"  style="padding: 0px;height: 418px;">
+
+                <h2 class="p-title" style="margin:60px 0px 0px 242px;text-align: left;color: #666666;">$client_name将获取您的以下权限！</h2>
+                <div class="checkbox" style="margin-top: 42px;margin-left: 242px;">
+                    <label style="color: #666666;">
+                        <input type="checkbox" checked="true" disabled="true">获取您的个人信息
+                    </label>
+                </div>
+
+                <form role="form" class="form-horizontal" method="post" action="authorize">
+                    <input type="text" name="action" value="authorize" hidden="true"/>
+                    <input type="text" name="authkey" value="$authkey" hidden="true"/>
+                    <input type="text" name="authvalue" value="$authvalue" hidden="true"/>
+
+                    <div style="width:105px;font-size: 18px;margin: 117px 0px 0 305px;">
+                        <button type="submit" class="button btn-info" style="padding:2px;width:105px;background-color: #00a8e8;" >确认授权</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+
+</script>
+</html>

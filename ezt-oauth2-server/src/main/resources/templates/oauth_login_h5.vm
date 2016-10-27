@@ -1,0 +1,69 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=750px">
+
+    <link rel="stylesheet" href="/css/normalize.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/oauth_web_h5.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="/js/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+
+<div>
+    <div class="logo_header">
+        <img src="/img/logo2x.png">
+    </div> <!-- #main -->
+    <div class="main-wrapper">
+        <p>您将通过医指通账号访问$client_name！</p>
+
+        <form method="post" action="authorize">
+
+            <input type="text" name="action" value="login" hidden="true"/>
+            <input type="text" name="page_type" value="h5" hidden="true"/>
+            <input type="text" name="client_id" value="$client_id" hidden="true" />
+            <input type="text" name="response_type" value="$response_type" hidden="true" />
+            <input type="text" name="redirect_uri" value="$redirect_uri" hidden="true" />
+
+            <div class="input-group input-group-h5 input-group-lg ">
+                <span class="input-group-addon"><i class="icon-user icon-3x"></i></span>
+                <input type="text" name="user_account" class="form-control" style="font-size: 32px;height: inherit;" placeholder="请输入手机号/会员号">
+            </div>
+
+            <div class="input-group input-group-h5 input-group-lg">
+                <span class="input-group-addon" style=""><i class="icon-lock icon-3x"></i>&nbsp;</span>
+                <input type="password" name="user_password" class="form-control" style="font-size: 32px;height: inherit;" placeholder="请输入登录密码">
+            </div>
+
+            <div style="margin: 0px 30px;text-align:right;">
+                <a href="http://np.eztcn.com/website/View/User/recover.jsp" style="font-size: 22px;color: #00a8e8;">忘记密码？</a>
+            </div>
+
+            <div style="margin: 96px 30px 38px 30px;">
+                <button type="submit" class="button btn-info button-h5" >登录</button>
+            </div>
+
+            <div style="margin: 38px 30px;">
+                <button type="button" class="button btn-info button-h5" onclick="window.open('http://www.eztcn.com/Home/User/userlogin.html')">注册</button>
+            </div>
+
+        </form>
+    </div>
+</div> <!-- #main-container -->
+
+</body>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</html>
+

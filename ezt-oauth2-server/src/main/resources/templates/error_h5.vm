@@ -1,0 +1,49 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=750px,user-scalable=no">
+
+    <link rel="stylesheet" href="/css/normalize.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/oauth_web_h5.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/2.2.1/jquery.min.js"></script>
+    <script src="/js/modernizr-2.0.6.min.js"></script>
+
+</head>
+<body>
+
+<div>
+
+    <div class="logo_header">
+        <img src="/img/logo2x.png">
+    </div> <!-- #main -->
+
+    <div class="main-wrapper">
+
+        <div style="padding-top: 150px;text-align:center;height: 400px;">
+            <img src="/img/error.png">
+            <p>出错啦：$error_description</p>
+        </div>
+
+        <div style="margin: 150px 30px 38px 30px;">
+            <button type="button" onclick="history.go(-1)" class="button btn-info button-h5" >返回</button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</html>
+
